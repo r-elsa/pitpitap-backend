@@ -31,6 +31,11 @@ app.use(express.json())
     res.header('X-Total-Count', 6)
     next();
   }); 
+
+
+ /*  if (process.env.NODE_ENV === "production"){
+      app.use(express.static("client/build"));
+  } */
 //by convention,call the object 'app'
 //object has some useful methods - get, post, put, delete
 
